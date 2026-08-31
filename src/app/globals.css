@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+body {
+  background-color: #090d16 !important;
+  color: #f1f5f9 !important;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Width of the entire scrollbar */
+.popup-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* The track (light orange) */
+.popup-container::-webkit-scrollbar-track {
+  background: #FFD580; 
+  border-radius: 5px;
+}
+
+/* The draggable thumb (dark orange) */
+.popup-container::-webkit-scrollbar-thumb {
+  background: #FF8C00; 
+  border-radius: 5px;
+  border: 2px solid #FFD580; /* Adds a nice border to match the track */
+}
+
+/* Hover effect for the thumb */
+.popup-container::-webkit-scrollbar-thumb:hover {
+  background: #E67E22; 
+}
+
+.popup-title {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Change this to match your popup's exact background color */
+  z-index: 10; /* Ensures it stays above the scrolling content */
+  padding: 15px 0; /* Adds some breathing room so scrolling text doesn't clip instantly */
+  margin: 0;
+}
